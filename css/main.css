@@ -227,6 +227,15 @@ button:hover, button:focus {
 }
 
 .backdrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -250,33 +259,19 @@ button:hover, button:focus {
 
 .modal {
   display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
   padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 450px;
-  height: 609px;
+  position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  max-width: 450px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .backdrop--is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.8);
-          transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -303,6 +298,7 @@ button:hover, button:focus {
 }
 
 .modal__form {
+  display: block;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 12px;
