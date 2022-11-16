@@ -232,6 +232,7 @@ button:hover, button:focus {
   left: 0;
   opacity: 1;
   padding: 93px 15px;
+  z-index: 999;
   -webkit-transition-property: opacity;
   transition-property: opacity;
   -webkit-transition-duration: 250ms;

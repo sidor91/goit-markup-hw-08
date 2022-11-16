@@ -7,6 +7,7 @@
     left: 0;
     opacity: 1;
     padding: 93px 15px;
+    z-index: 999;
 
     @include transitioned(opacity);
 
@@ -69,7 +70,7 @@
 
 .modal__form {
     margin-bottom: 20px;
-    
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
