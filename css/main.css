@@ -705,15 +705,17 @@ button:hover, button:focus {
     height: auto;
     padding: 0;
   }
-  .menu-container .menu-button {
-    display: none;
-  }
   .menu-container .header-social {
     display: none;
   }
 }
 
 .menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
   border: none;
   background-color: transparent;
 }
