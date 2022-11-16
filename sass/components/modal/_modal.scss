@@ -149,6 +149,7 @@
 .close-button__icon {
     width: 11px;
     height: 11px;
+    fill: black;
     
     .close-button:hover & {
         fill: $accent-color;

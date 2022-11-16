@@ -391,6 +391,7 @@ button:hover, button:focus {
 .close-button__icon {
   width: 11px;
   height: 11px;
+  fill: black;
 }
 .close-button:hover .close-button__icon {
   fill: #2196F3;
