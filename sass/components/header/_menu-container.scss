@@ -3,13 +3,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 999;
-    
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
+    padding: 48px 0 48px 40px;
 
     background-color: $white-color;
 
@@ -17,11 +14,10 @@
         display: block;
 
         ~ .menu-button {
-            position: fixed;
+            position: absolute;
             top: 10px;
-            left: 425px;
+            right: 10px;
             z-index: 999;
-
         }
     }
 
