@@ -1,0 +1,73 @@
+@import "./footerContacts";
+@import "./footerSocial";
+@import "./footerForm";
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $footer-background-color;
+}
+
+.footer__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+}
+
+.adress-social {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.adress-contacts {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 61px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.footer-logo {
+    @extend %logo;
+    margin-bottom: 20px;
+
+    &--accent {
+        color: $accent-color;
+    }
+    
+    &--white {
+        color: white;
+    }
+}
+
+.footer__address {
+    display: inline-block;
+    width: 231px;
+    align-content: left;
+    padding: 0;
+    margin-bottom: 9px;
+
+    color: $white-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+.footer-submit__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}

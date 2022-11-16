@@ -1,0 +1,126 @@
+.header-contacts {
+    display: inline-block;
+    padding: 0;
+    margin: 302px 0 0 0;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 0 0 auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-contacts__item:nth-child(1) {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+    }
+   
+    .header-contacts__item:nth-child(2) {
+        margin-top: 32px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+}
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+    @include transitioned(color);
+
+    color: $header-contacts-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        outline: transparent;
+    }
+
+    @media screen and (max-width: 767px) {
+        &--accent {
+            color: $accent-color;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+        
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .header-contacts__item:nth-child(2) {
+        display: block;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header-contacts__item:nth-child(1) {
+        margin-left: 30px;
+    }
+}
+
+.header-contacts__icon {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
+    fill: $header-contacts-color;
+    @include transitioned(fill);
+
+    .header-contacts__link:hover &, 
+    .header-contacts__link:focus & {
+        fill: $accent-color;
+    }
+
+}
+
+.envelope {
+    width: 14px;
+    height: 10px;
+
+    @media screen and (min-width:1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.smartphone {
+    width: 10px;
+    height: 14px;
+
+    @media screen and (min-width:1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+.header-contacts__label {
+    margin-left: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 10px;
+    }
+    
+}
+

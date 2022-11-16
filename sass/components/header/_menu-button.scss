@@ -1,0 +1,34 @@
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    fill: black;
+
+    border: none;
+    background-color: transparent;
+
+    &:hover, 
+    &:focus {
+        fill: $accent-color;
+        outline: transparent;
+    }
+
+    & .menu-button__closemenu {
+        display: none;
+    }
+
+    &.is-open {
+        .menu-button__closemenu {
+            display: block;
+        }
+
+        .menu-button__burgermenu {
+            display: none;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

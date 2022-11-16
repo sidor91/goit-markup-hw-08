@@ -1,0 +1,31 @@
+@import "../../utils/vars";
+
+.checkbox {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+}
+
+.checkbox__icon {
+    display: inline-block;
+    padding: 0;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid black;
+    border-radius: 2px;
+    @include transitioned(background-color);
+
+    .checkbox:checked + & {
+        background-color: $accent-color;
+        border: none;
+    }
+}

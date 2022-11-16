@@ -1,0 +1,54 @@
+@import "../common/socialIcons";
+
+.footer-social {
+    margin-top: 60px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 5px;
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 12px;
+        margin-left: 70px;
+    }
+}
+
+.footer-social__heading {
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white-color;
+}
+
+.footer-social__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social__item {
+    @include transitioned(background-color);
+    background-color: $footer-social-background;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.footer-social__icon {
+    fill: $white-color;
+}
+

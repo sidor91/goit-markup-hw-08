@@ -1,0 +1,25 @@
+@import "../../common/socialIcons";
+
+.team-social {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
+    }
+}
+
+.team-social__icon {
+    fill: $social-item-color;
+
+    .team-social__item:hover &,
+    .team-social__item:focus & {
+        fill: $white-color;
+    }
+}
+

@@ -1,0 +1,40 @@
+.menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+
+    background-color: $white-color;
+
+    &.is-open {
+        display: block;
+
+        ~ .menu-button {
+            position: fixed;
+            top: 10px;
+            left: 425px;
+            z-index: 999;
+
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        position: static;
+        height: auto;
+        padding: 0;
+
+        .header-social {
+            display: none;
+        }
+    }
+}
+

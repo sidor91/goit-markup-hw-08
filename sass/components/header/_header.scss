@@ -1,0 +1,45 @@
+@import "./main-nav";
+@import "./headerContacts";
+@import "./menu-container";
+@import "./menu-button";
+@import "./header-social";
+
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $white-color;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        justify-content: unset;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.header-logo {
+    @extend %logo; 
+
+    &--accent {
+        color: $accent-color;
+    }
+
+    &--black {
+        color: black;
+    }
+}
+
+

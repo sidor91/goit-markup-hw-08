@@ -1,0 +1,50 @@
+.services {
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.services__heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.services__list {
+    display: flex;
+}
+
+.services__image {
+    display: block;
+}
+
+.services__item {
+    width: calc((100% - 60px)/3);
+    height: auto;
+    position: relative;
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.services__title {
+    display: block;
+    padding: 27px 0;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+
+    color: $white-color;
+    background-color: $service-title-background;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
